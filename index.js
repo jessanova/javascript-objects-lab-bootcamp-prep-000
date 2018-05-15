@@ -1,7 +1,7 @@
 var recipes = {}
 function updateObjectWithKeyAndValue(object,key,value){
   var obj = {}
-  obj.assign({},object)
+  obj=Object.assign({},object)
   return obj[key]=value
   return obj
 }
@@ -10,7 +10,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object,key,value){
 }
 function deleteFromObjectByKey(object,key){
   var obj = {}
-  obj.assign({},object)
+  ojb = Object.assign({},object)
   delete obj[key]
   return obj
 }
